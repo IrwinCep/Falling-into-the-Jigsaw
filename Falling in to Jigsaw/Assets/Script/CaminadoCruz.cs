@@ -7,6 +7,7 @@ public class CaminadoCruz : MonoBehaviour
     private Rigidbody miCuerpo;
     private Animator miAnimador;
     public float velocidadCaminar = 5;
+    public float gravedad;
 
     void Start()
     {
@@ -17,6 +18,7 @@ public class CaminadoCruz : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        miCuerpo.AddForce(gravedad * Physics.gravity);
         float vertical = Input.GetAxis("Vertical");
         float horizontal = Input.GetAxis("Horizontal");
 
@@ -24,8 +26,6 @@ public class CaminadoCruz : MonoBehaviour
 
         miAnimador.SetFloat("Despl_Front", vertical);
 
-        miCuerpo.velocity = (transform.forward * vertical *velocidadCaminar) + (transform.right * horizontal * velocidadCaminar);
-
-
+        miCuerpo.velocity = (transform.forward * vertical * velocidadCaminar) + (transform.right * horizontal * velocidadCaminar);
     }
 }
