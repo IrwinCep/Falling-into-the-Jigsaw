@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4808911156807659478}
   - component: {fileID: 8549558736925932652}
-  - component: {fileID: 2646117800251129683}
   - component: {fileID: 8363029949862459689}
   m_Layer: 0
   m_Name: Puerta fea
@@ -45,7 +44,7 @@ Animator:
   m_GameObject: {fileID: 8550939885841521775}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 054af147595ae924bb166c78a520d103, type: 2}
+  m_Controller: {fileID: 9100000, guid: 3640fb259f337a442a9dcb73e2bd0c59, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -56,19 +55,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &2646117800251129683
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8550939885841521775}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 91df90b653465964ba5b9f0ce995f81a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  textoAccion: 
 --- !u!65 &8363029949862459689
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -112,7 +98,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 449608, guid: 5241474d8a890dc45804e91d2deef410, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 1.265
       objectReference: {fileID: 0}
     - target: {fileID: 449608, guid: 5241474d8a890dc45804e91d2deef410, type: 3}
       propertyPath: m_LocalRotation.w
