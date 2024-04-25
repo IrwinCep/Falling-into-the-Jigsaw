@@ -4,17 +4,17 @@ using UnityEngine;
 
 public class LLave : MonoBehaviour
 {
-    public GameObject Objetollave;
-    public GameObject ColliderPuerta;
+    public Collider ColliderPuerta;
 
 
     void OnTriggerEnter(Collider other)
     {
-
+        print("Entrando en contactor con " + other);
         if (other.CompareTag("Player"))
         {
-            ColliderPuerta.gameObject.SetActive(true);
-            Destroy(Objetollave);
+            print("Si es player");
+            ColliderPuerta.enabled = true;
+            Destroy(gameObject);
         }
 
     }

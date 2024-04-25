@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class Puerta : MonoBehaviour
 {
-    private bool abierto = false;
     public Animator animator;
     void Start()
     {
@@ -16,8 +15,7 @@ public class Puerta : MonoBehaviour
 
         if (other.CompareTag("Player"))
         {
-                animator.SetTrigger("ABRIR");
-                abierto = true;
+                animator.SetBool("ABRIR", true);
         }
 
     }
