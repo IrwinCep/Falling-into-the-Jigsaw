@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Puerta : MonoBehaviour
 {
-    public Animator animator;
+    private Animator animator;
     void Start()
     {
         animator = GetComponent<Animator>();
